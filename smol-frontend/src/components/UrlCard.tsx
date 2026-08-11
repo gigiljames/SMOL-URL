@@ -15,7 +15,8 @@ function UrlCard({ urlItem, onDelete, onUpdate }: UrlCardProps) {
   const [loading, setLoading] = useState(false);
 
   const backendBaseUrl = import.meta.env.VITE_AXIOS_BASE_URL || "http://localhost:3000";
-  const fullShortUrl = `${backendBaseUrl}/${urlItem.shortCode}`;
+  const shortUrlDomain = import.meta.env.VITE_SHORT_URL_DOMAIN || backendBaseUrl;
+  const fullShortUrl = `${shortUrlDomain}/${urlItem.shortCode}`;
 
   async function handleCopy(text: string, label: string) {
     try {

@@ -1,0 +1,12 @@
+{
+    "rewrites": [
+        {
+            "source": "/s_:shortCode",
+            "destination": "https://api.smol.uno/s_:shortCode"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ]
+}

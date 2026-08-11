@@ -13,7 +13,7 @@ import { UpdateUrlDto } from './dto/update-url.dto';
 export class UrlService {
   constructor(
     @InjectModel(Url.name) private readonly urlModel: Model<UrlDocument>,
-  ) {}
+  ) { }
 
   async createUrl(userId: string, createUrlDto: CreateUrlDto) {
     let { title, url } = createUrlDto;
@@ -108,7 +108,7 @@ export class UrlService {
     let attempts = 0;
 
     while (attempts < 10) {
-      let shortCode = '';
+      let shortCode = 's_';
       for (let i = 0; i < length; i++) {
         shortCode += chars.charAt(Math.floor(Math.random() * chars.length));
       }

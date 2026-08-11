@@ -18,7 +18,7 @@ import { JwtAuthGuard } from '../user/guards/jwt.guard';
 
 @Controller()
 export class UrlController {
-  constructor(private readonly urlService: UrlService) {}
+  constructor(private readonly urlService: UrlService) { }
 
   @Post('url')
   @UseGuards(JwtAuthGuard)
@@ -74,7 +74,7 @@ export class UrlController {
     return result;
   }
 
-  @Get(':shortCode')
+  @Get('s_:shortCode')
   async redirectToOriginalUrl(
     @Param('shortCode') shortCode: string,
     @Res() res: any,
