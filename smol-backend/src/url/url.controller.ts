@@ -74,7 +74,7 @@ export class UrlController {
     return result;
   }
 
-  @Get('s_:shortCode')
+  @Get('u/:shortCode')
   async redirectToOriginalUrl(
     @Param('shortCode') shortCode: string,
     @Res() res: any,

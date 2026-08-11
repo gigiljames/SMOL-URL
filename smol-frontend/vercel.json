@@ -1,8 +1,8 @@
 {
     "rewrites": [
         {
-            "source": "/s_:shortCode",
-            "destination": "https://api.smol.uno/s_:shortCode"
+            "source": "/u/:shortCode",
+            "destination": "https://api.smol.com/u/:shortCode"
         },
         {
             "source": "/(.*)",
