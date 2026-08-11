@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+* {
+  /* background-color: rgb(31, 30, 30);
+  color: rgb(223, 223, 223); */
+  box-sizing: border-box;
+}
+
+.matemasie {
+  font-family: "Matemasie", sans-serif;
+}
+
+.patrick-hand {
+  font-family: "Patrick Hand", cursive;
+}
+
+.google-sans-flex {
+  font-family: "Google Sans Flex", sans-serif;
+  font-optical-sizing: auto;
+}
