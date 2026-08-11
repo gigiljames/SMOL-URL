@@ -2,7 +2,7 @@
     "rewrites": [
         {
             "source": "/u/:shortCode",
-            "destination": "https://api.smol.com/u/:shortCode"
+            "destination": "https://api.smol.uno/u/:shortCode"
         },
         {
             "source": "/(.*)",
